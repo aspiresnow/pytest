@@ -42,13 +42,24 @@ class person:
     # 实例对象方法，通过对象调用
     def makeEge(self): #做鸡蛋
         print self.name, '会做鸡蛋'
+        self.__privateFunc() #实例对象私有方法只能在类内部调用
 
-    # 类方法，可以通过类和对象调用
+    # 类对象方法，可以通过类和对象调用
     @classmethod
     def speak(cls):
         print "person can speak!"
+        cls.__privateCls() #类对象私有方法只能在类内部调用
 
     # 静态方法，引用什么属性用相应的 cls 和 self
     @staticmethod
     def watch():
         return "person can watch!"
+
+    # 私有类对象方法
+    @classmethod
+    def __privateCls(cls):
+        print "private cls function"
+
+    # 实例对象私有方法
+    def __privateFunc(self):
+        print "private function"

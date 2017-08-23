@@ -28,3 +28,5 @@ print p2.name
 p2.name = "晓红"
 print p2.name
 print p1.name
+# print p1.__privateFunc # 在外部无法访问私有方法
+# print person.__privateCls
