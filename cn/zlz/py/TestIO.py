@@ -60,7 +60,7 @@ print list(f)
 # 使用完文件后关闭
 f.close()
 
-# 使用with 在文件使用完之后会自动关闭，即使出现异常
+# 使用with 在文件使用完之后会自动关闭，即使出现异常，类似finally里面关闭流
 with open('workfile', 'r') as f:
     read_data = f.read()
 f.closed

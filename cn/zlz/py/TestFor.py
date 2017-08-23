@@ -75,3 +75,17 @@ for w in words[:]:  # Loop over a slice copy of the entire list.
         words.insert(0, w)
 
 words
+
+# 迭代器
+
+s = 'abc'
+it = iter(s)
+
+print it.next()
+
+print it.next()
+
+print it.next()
+
+print it.next()
+print it.next()
