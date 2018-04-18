@@ -13,4 +13,4 @@ name1 = "123"
 # print input
 
 def run(i):
-    print i," is running!"
+    print (i," is running!")

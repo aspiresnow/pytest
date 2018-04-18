@@ -63,25 +63,25 @@ v = ([1, 2, 3], [3, 2, 1])
 ### set 无序且不重复
 # set = set() # 使用set()创建一个空的set集合
 set = set([1,2,3,3,2,1])
-print set
+print (set)
 #公式推导
 a = [x for x in 'abracadabra' if x not in 'abc']
-print a
+print (a)
 
 ### 字典 key可以是任意不可变类型；字符串和数字常用来做key
 obj = {"name":"zhangsna","age":12}
-print obj['name']
+print (obj['name'])
 # 输出字段的字段list
-print obj.keys()
+print (obj.keys())
 # 删除字段属性
 del obj['name']
-print obj.keys()
+print (obj.keys())
 # dict函数从key-value创建字段
 person = dict([('name', "lisi"), ('age', 12), ('sex', "男")])
-print person.keys()
+print (person.keys())
 # 等价
 person = dict(name='lisi', age=23, sex="男")
-print person.keys()
+print (person.keys())
 # 字典推导
 {x: x**2 for x in (2, 4, 6)}  #{2: 4, 4: 16, 6: 36}
 

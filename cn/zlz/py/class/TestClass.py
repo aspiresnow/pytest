@@ -7,6 +7,6 @@ from socket import gethostname
 
 from .. TestFunction import fib
 
-print fib(1)
-print gethostname()
-print 'test_class'
+print (fib(1))
+print (gethostname())
+print ('test_class')

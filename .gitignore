@@ -1,0 +1,10 @@
+/target/
+/.settings/
+.project
+.classpath
+.mymetadata
+.iml
+.idea/
+*.iml
+.idea/workspace.xml
+.DS_Store

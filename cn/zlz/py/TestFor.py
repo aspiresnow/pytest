@@ -66,7 +66,7 @@ for q, a in zip(questions, answers):
 # 使用sorted 返回一个新的排序的列表，同时保留源不变
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 for f in sorted(set(basket)):
-    print f
+    print (f)
 
 # 循环内部修改正在遍历的序列（例如复制某些元素），建议您首先制作副本。在序列上循环不会隐式地创建副本
 words = ['cat', 'window', 'defenestrate']
@@ -81,11 +81,11 @@ words
 s = 'abc'
 it = iter(s)
 
-print it.next()
+print (it.next())
 
-print it.next()
+print (it.next())
 
-print it.next()
+print (it.next())
 
-print it.next()
-print it.next()
+print (it.next())
+print (it.next())

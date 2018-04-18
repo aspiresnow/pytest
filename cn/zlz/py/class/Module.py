@@ -5,7 +5,7 @@ moduleName = "module"
 
 # 函数
 def fib(x):
-    print x
+    print (x)
 
 # 类
 class person:
@@ -22,7 +22,7 @@ class person:
 
     # 构造方法，创建对象时调用
     def __init__(self, name, sex):
-        print "执行构造方法:",name,sex
+        print ("执行构造方法:",name,sex)
         self.name = name
 
     # 析构方法，释放对象时调用
@@ -41,13 +41,13 @@ class person:
 
     # 实例对象方法，通过对象调用
     def makeEge(self): #做鸡蛋
-        print self.name, '会做鸡蛋'
+        print (self.name, '会做鸡蛋')
         self.__privateFunc() #实例对象私有方法只能在类内部调用
 
     # 类对象方法，可以通过类和对象调用
     @classmethod
     def speak(cls):
-        print "person can speak!"
+        print ("person can speak!")
         cls.__privateCls() #类对象私有方法只能在类内部调用
 
     # 静态方法，引用什么属性用相应的 cls 和 self
@@ -58,8 +58,8 @@ class person:
     # 私有类对象方法
     @classmethod
     def __privateCls(cls):
-        print "private cls function"
+        print ("private cls function")
 
     # 实例对象私有方法
     def __privateFunc(self):
-        print "private function"
+        print ("private function")
