@@ -8,7 +8,7 @@
 def fib(n):
     a,b=0,1 #可以通过,同时定义多个成员变量
     a, b = b, a + b
-    print a,b,n;
+    print (a,b,n);
 fib(10) #调用函数 传入参数
 
 ### 函数可以当做一个变量进行传递
@@ -17,7 +17,7 @@ f(10)
 
 ### 定义函数参数的默认值
 def fib(x,y=5,z=8):#指定了默认值的参数非必传
-    print x,y,z
+    print (x,y,z)
 fib(2,5)
 ###指定参数名称调用,这样就可以跳过前面的非必传参数
 fib(x=2,z=6)
@@ -31,25 +31,25 @@ def f(a, L=None):
 
 ### 可变参数 *names获取可变参数的列表形式，**names获取可变参数的key-value形式，*nams要在**names之前
 def fib(n,*args,**names):
-    print "this is the fix arg：",n
+    print ("this is the fix arg：",n)
     for x in args:
-        print "this is the arg arr:",x
-    print "-"*40
+        print ("this is the arg arr:",x)
+    print ("-"*40)
     keys = sorted(names.keys())
     for k in keys:
-        print k,":",names[k]
+        print (k,":",names[k])
 fib("哈哈","this is the first","this is the second",third="this is the third",forth="this is the forth")
 
 ### 使用*name传递参数
 arr = [2,4]
 def fib(x,y):
-    print "x*y is:",x*y
+    print ("x*y is:",x*y)
 fib(*arr) ###参数传入一个数组，使用*指定分拆数组为需要的参数
 
 ### 接收对象为参数
 arr = {"x":3,"y":6}
 def fib(x=1,y=1):
-    print "x*y is:",x*y
+    print ("x*y is:",x*y)
 fib(**arr) ###参数传入一个对象，使用**指定分拆对象为需要的参数
 
 ### 使用lambda表达式
@@ -58,4 +58,4 @@ def fib(n):
 f = fib(3)
 f(5)
 
-print fib.__doc__
+print (fib.__doc__)

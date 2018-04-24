@@ -22,23 +22,23 @@ for arg in sys.argv[0:]:
     try:
         f = open(arg, 'r')
     except IOError:
-        print 'cannot open', arg
+        print ('cannot open', arg)
     else:
-        print arg, 'has', len(f.readlines()), 'lines'
+        print (arg, 'has', len(f.readlines()), 'lines')
         f.close()
 
 # 异常实例绑定了_ _str__()，因此异常的参数可以直接打印而不必引用.args
 try:
     raise Exception("a","b")
 except Exception as inst:
-    print type(inst)
-    print inst.args
-    print inst # __str__()
+    print (type(inst))
+    print (inst.args)
+    print (inst) # __str__()
     x,y = inst.args
-    print 'x = ', x
-    print 'y = ',y
+    print ('x = ', x)
+    print ('y = ',y)
 finally:
-    print 'finally' # 最终会执行
+    print ('finally') # 最终会执行
 
 # 创建自定义异常继承Exception
 class MyError(Exception):

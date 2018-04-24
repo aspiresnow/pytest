@@ -19,7 +19,7 @@ list.count(3)
 #反转list
 list.reverse()
 #计算数字list的总和
-print sum(list)
+print (sum(list))
 # 删除下标为2的元素，但是没有返回值
 del list[2]
 # 清空list
@@ -31,7 +31,7 @@ from collections import deque
 deque = deque(["a","b","c"])
 deque.append("d")
 q=deque.popleft()
-print q
+print (q)
 
 # filter函数 filter(function(x),list)
 arr = filter(lambda x: x%2==0,range(1,10))
@@ -42,9 +42,6 @@ map(lambda x,y: x+y, range(1,10), range(1,10))
 # 列表推导公式 等价于上面这个lambda表达式
 arr = [x+1 for x in range(10)]
 
-# reduce函数 reduce(function(x),list,初始值)
-sum = reduce(lambda x,y: x+y,range(1,10),10)
-print sum
 
 ### 列表推导公式
 [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
