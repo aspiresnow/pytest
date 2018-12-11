@@ -46,7 +46,7 @@ for x in range(1,10):
     print (x)
     # break
 else:#当（for）循环迭代完整个列表或（while）循环条件变为假，而非由break语句终止时，就会执行这个else语句
-    print (x,"is a prime number")
+    print (x,"is a prime number") #(9, 'is a prime number')
 
 # 使用enumerate函数输出下标和值
 for i, v in enumerate(['tic', 'tac', 'toe']):
@@ -80,12 +80,5 @@ words
 
 s = 'abc'
 it = iter(s)
-
-print (it.next())
-
-print (it.next())
-
-print (it.next())
-
-print (it.next())
-print (it.next())
+while it.next:
+    print it.next()

@@ -9,3 +9,5 @@
 .idea/workspace.xml
 .DS_Store
 ./venv/
+venv/
+.idea/
