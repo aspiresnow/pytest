@@ -81,4 +81,4 @@ words
 s = 'abc'
 it = iter(s)
 while it.next:
-    print it.next()
+    print (it.next())
